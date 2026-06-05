@@ -1,7 +1,8 @@
 # QRcode
 
                                                 **FexCam**
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/89f50a71-c69b-41ee-88c7-2a822048b57e" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/5b2428b2-8ba7-44bd-b53a-ec08a0fb804d" />
+
 
 **Project Overview:**
 
