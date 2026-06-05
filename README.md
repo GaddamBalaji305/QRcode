@@ -1,103 +1,132 @@
-# QRcode
+<div align="center">
+  <h1>FexCam</h1>
+  <img src="FexCam.gif" alt="Terminal Demo" width="600">
+</div>
 
-                                                **FexCam**
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/5b2428b2-8ba7-44bd-b53a-ec08a0fb804d" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8e85d806-edee-4012-a997-387884fd59b6" />
 
+## Project Overview
 
-**Project Overview:**
+This project is a **Proof of Concept (PoC)** developed for **security
+research and educational purposes**.\
+It demonstrates the technical capabilities of modern web APIs---such as
+**Camera**, **Geolocation**, and **Metadata**---and how they can be
+accessed by a server once a user grants explicit browser permissions.
 
-This project is a Proof of Concept (PoC) developed for security research and educational purposes.
-It demonstrates the technical capabilities of modern web APIs---such as Camera, Geolocation, and Metadata---and how they can be accessed by a server once a user grants explicit browser permissions.
+The primary objective is to raise awareness about **Social Engineering
+tactics** and the critical importance of **proper browser permission
+management**.
 
-The primary objective is to raise awareness about Social Engineering tactics and the critical importance of proper browser permission management.
+------------------------------------------------------------------------
 
-**Legal & Ethical Disclaimer**
+## Legal & Ethical Disclaimer
 
-**IMPORTANT: THIS TOOL IS FOR EDUCATIONAL PURPOSES ONLY**
+> **IMPORTANT: THIS TOOL IS FOR EDUCATIONAL PURPOSES ONLY**
 
+-   **Unauthorized Usage:** Using this tool against targets without
+    prior **mutual written consent** is strictly prohibited and may be
+    illegal.
+-   **Liability:** The organization (**@DsevenFex**) assumes **no
+    responsibility** for misuse, data loss, or legal consequences
+    resulting from this software.
+-   **Compliance:** The end-user is solely responsible for compliance
+    with all applicable **local and international privacy regulations**
+    (e.g., GDPR, CCPA).
+-   **Prohibition:** Malicious activities or unauthorized data
+    collection are **strictly forbidden**.
 
-*Unauthorized Usage: Using this tool against targets without prior mutual written consent is strictly prohibited and may be illegal.
+------------------------------------------------------------------------
 
-*Liability: The organization (@DsevenFex) assumes no responsibility for misuse, data loss, or legal consequences resulting from this software.
+## Technical Features
 
-*Compliance: The end-user is solely responsible for compliance with all applicable local and international privacy regulations (e.g., GDPR, CCPA).
+-   **Multi-Tunneling Support**\
+    Integrated support for **Ngrok** and **Cloudflare** to expose local
+    development servers to the internet.
 
-*Prohibition: Malicious activities or unauthorized data collection are strictly forbidden.
+-   **System Metadata Extraction**\
+    Captures **User-Agent**, **IP address**, and detailed browser
+    configuration data.
 
-**Technical Features**
+-   **Geolocation Precision**\
+    Demonstrates retrieval of GPS coordinates using the **W3C
+    Geolocation API**.
 
-Multi-Tunneling Support
-Integrated support for Ngrok and Cloudflare to expose local development servers to the internet.
+-   **Media Stream Processing**\
+    Real-time camera frame capture to highlight risks associated with
+    media access permissions.
 
-System Metadata Extraction
-Captures User-Agent, IP address, and detailed browser configuration data.
+-   **Automated Data Management**\
+    Structured organization of captured data into dedicated local
+    directories.
 
-Geolocation Precision
-Demonstrates retrieval of GPS coordinates using the W3C Geolocation API.
+------------------------------------------------------------------------
 
-Media Stream Processing
-Real-time camera frame capture to highlight risks associated with media access permissions.
-
-Automated Data Management
-Structured organization of captured data into dedicated local directories.
-
-**Installation & Deployment**
-
-**1. If you can use bash**
-
+## Installation & Deployment
+### 0. If you can use bash
+```bash
 git clone https://github.com/Dsevenfex/FexCam
-
 cd FexCam
-
 ./FexCam.sh
+```
+# OR
+### 1. Repository Cloning
 
-**OR**
-
-**2. Repository Cloning**
-
+``` bash
 git clone https://github.com/Dsevenfex/FexCam
-
 cd FexCam
+```
 
-**3. Environment Configuration**
+### 2. Environment Configuration
 
+``` bash
 python3 -m venv venv
-
-**Linux && Mac**
-
-source venv/bin/activate
-
-**Windows**
-
+```
+##### Linux && Mac
+```bash
+source venv/bin/activate 
+```
+##### Windows
+```bash
 venv\Scripts\activate 
 
-**4. Dependency Installation**
+```
 
+### 3. Dependency Installation
+
+``` bash
 pip install -r requirements.txt
+```
 
-**5. Execution**
+### 4. Execution
 
+``` bash
 python FexCam.py
+```
 
-**6. Tunneling Setup**
+### 5. Tunneling Setup
 
-Select Ngrok or Cloudflare via the CLI.
+-   Select **Ngrok** or **Cloudflare** via the CLI.
+-   If **Ngrok** is selected, ensure a valid `authtoken` is configured.
 
-If Ngrok is selected, ensure a valid authtoken is configured.
+------------------------------------------------------------------------
 
-**Directory Architecture**
 
-Path                         	Description
+##  Directory Architecture
 
-photos/	                   Archived captured media assets
+| Path               | Description                                   |
+|--------------------|-----------------------------------------------|
+| `photos/`          | Archived captured media assets                |
+| `infos/`           | System and browser metadata (JSON)            |
+| `locations/`       | Geographic coordinate data (JSON)             |
+| `TOKEN_NGROK.txt`  | Local Ngrok authentication token              |
 
-infos/	                   System and browser metadata (JSON)
+---
 
-locations/	               Geographic coordinate data (JSON)
 
-TOKEN_NGROK.txt	           Local Ngrok authentication token
+## License
 
-**License**
+This project is distributed under the **MIT License**.\
+Refer to the official `LICENSE` file for further details.
 
-This project is distributed under the MIT License.
-Refer to the official LICENSE file for further details.
+
+
